@@ -1,5 +1,5 @@
 <ul>
 <% @tasks.each do |task| %>
-  <li> <%= task.completed %> | <%= task.title %> </li>
+  <li> <%= task.completed %> | <%= link_to task.title,  task_path(task) %></li>
 <% end %>
 </ul>
